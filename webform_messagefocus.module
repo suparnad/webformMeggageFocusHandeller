@@ -1,0 +1,25 @@
+<?php
+
+/**
+ * @file
+ * Contains webform_messagefocus.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function webform_messagefocus_help($route_name, RouteMatchInterface $route_match)
+{
+  switch ($route_name) {
+      // Main module help for the webform_messagefocus module.
+    case 'help.page.webform_messagefocus':
+      $output = '';
+      $output .= '<h3>' . t('About page') . '</h3>';
+      $output .= '<p>' . t('Provides logic to allow the submission of Webforms to the MessageFocus system') . '</p>';
+      return $output;
+
+    default:
+  }
+}

@@ -1,0 +1,7 @@
+name: Webform MessageFocus
+type: module
+description: Provides logic to allow the submission of Webforms to the MessageFocus system
+core_version_requirement: ^8 || ^9
+package: "custom"
+dependencies:
+  - webform
